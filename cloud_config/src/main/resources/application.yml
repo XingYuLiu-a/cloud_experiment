@@ -9,8 +9,8 @@ spring:
       server:
         git:
           uri: https://gitee.com/lxy1478/cloud_config.git
-          username: lxy1478
-          password: a13600582228
+          username: 
+          password: 
           default-label: master
 
   rabbitmq:
