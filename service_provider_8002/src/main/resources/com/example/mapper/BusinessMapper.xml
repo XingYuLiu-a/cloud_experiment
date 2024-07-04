@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.BusinessMapper">
+    <update id="updateBusiness">
+        update business
+        <set>
+            <if test="businessName != null">businessName=#{businessName},</if>
+            <if test="businessAddress != null">businessAddress=#{businessAddress},</if>
+            <if test="businessExplain != null">businessExplain=#{businessExplain},</if>
+            <if test="businessImg != null">businessImg=#{businessImg},</if>
+            <if test="orderTypeId != null">orderTypeId=#{orderTypeId},</if>
+            <if test="starPrice != null">starPrice=#{starPrice},</if>
+            <if test="deliveryPrice != null">deliveryPrice=#{deliveryPrice},</if>
+            <if test="remarks != null">remarks=#{remarks},</if>
+        </set>
+        where businessId=#{businessId}
+    </update>
+</mapper>

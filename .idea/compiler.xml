@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service_provider_8001" />
+        <module name="service_consumer_10001" />
+        <module name="service_provider_8002" />
+        <module name="service_consumer_feign_10002" />
+        <module name="gateway_service_9527" />
+        <module name="cloud_config" />
+        <module name="gateway_service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gateway_service" target="17" />
+      <module name="service_consumer_10002" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+server:
+  port: 15000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/lxy1478/cloud_config.git
+          username: lxy1478
+          password: a13600582228
+          default-label: master
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: bus-refresh
